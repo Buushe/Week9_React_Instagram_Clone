@@ -4,7 +4,8 @@ import React from 'react';
 const PostHeader = props => {
   // 🔥 Make sure the parent of PostHeader is passing the right props!
   // Hubi in component-ga ka sareysa midaan ay props sax ah soo direyso.
-  const { thumbnailUrl, username } = props;
+        
+        const { thumbnailUrl, username, timestamp} = props;
 
   return (
     <div className='post-header'>
@@ -16,6 +17,7 @@ const PostHeader = props => {
         />
       </div>
       <h2>{username}</h2>
+      <h5>{timestamp}</h5>
     </div>
   );
 };
